@@ -1,0 +1,49 @@
+
+.burgerBtn{
+    position: relative;
+    width: 2em;
+    height: 2em;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all .5s ease-in-out;
+}
+.burgerSub{
+    width: 1.6em;
+    height: 0.25em;
+    background-color: black;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(255, 101, 47, .2);
+    display: flex;
+    columns: white;
+    transition: all 0.5s ease-in-out;
+}
+.burgerSub::before,
+.burgerSub::after {
+    content: '';
+    position: absolute;
+    width: 1.6em;
+    background-color: black;
+    height: 0.25em;
+    border-radius: 20px;
+    box-shadow: 0 2px 5px rgba(255, 101, 47, .2);
+    transition: all .5s ease-in-out;
+}
+.burgerSub::before{
+    transform: translateY(-16px);
+}
+.burgerSub::after{
+    transform: translateY(16px);
+}
+.burgerBtnClick .burgerSub{
+    transform: translateX(50px);
+    background: transparent;
+    box-shadow: none;
+}
+.burgerBtnClick .burgerSub::before{
+    transform: rotate(45deg) translate(-35px, 35px);
+}
+.burgerBtnClick .burgerSub ::after{
+    transform: rotate(-45deg) translate(-35px, -35px);
+}
