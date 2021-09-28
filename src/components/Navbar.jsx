@@ -13,7 +13,7 @@ function Navbar(props) {
     useOnclickOutside(node, ()=>setOpen(false));
     const items = useSelector(selectItems)//goi item tu global state
     const newItems = useSelector(state => state.item)// items & newItems giong nhau
-    console.log(newItems)
+    // console.log(newItems)
     return (
         <Container>
             <p>
@@ -57,11 +57,16 @@ const Container = styled.div`
 const Menu = styled.div`
     display: flex;
     align-items: center;
-    a{
+    p{
         font-weight: 550;
         font-size: 14.5px;
         padding: 0 1em;
-    }
+    }    
+    // a{ ----------thay toàn bộ thẻ a thành p để deploy thử vì <a> deploy bị lỗi------------------------------
+    //     font-weight: 550;
+    //     font-size: 14.5px;
+    //     padding: 0 1em;
+    // }
     @media(max-width: 768px){
             display: none;
     }
@@ -69,11 +74,16 @@ const Menu = styled.div`
 const RightMenu = styled(Menu)`
     position: relative;
     z-index: 30;
-    a{
+    p{
         font-weight: 550;
         font-size: 14.5px;
         padding: 0 1em;
     }
+    // a{
+    //     font-weight: 550;
+    //     font-size: 14.5px;
+    //     padding: 0 1em;
+    // }
     @media(max-width: 768px){
         display: flex;
 }

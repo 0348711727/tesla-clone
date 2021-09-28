@@ -36,7 +36,7 @@ const MenuNav = styled.nav`
     @media(max-width: 768px){
         max-width: 27vw;
     }
-    a{
+    p{ ----------thay toàn bộ thẻ a thành p để deploy thử vì <a> deploy bị lỗi------------------------------
         font-size: 0.75rem;
         text-transform: uppercase;
         padding: 1rem 0;
@@ -49,5 +49,17 @@ const MenuNav = styled.nav`
             width: 100%;
         }
     }
-
+    // a{
+    //     font-size: 0.75rem;
+    //     text-transform: uppercase;
+    //     padding: 1rem 0;
+    //     font-weight: bold;
+    //     letter-spacing: 0.5rem;
+    //     transition: color 0.3s linear;
+    //     &:hover{
+    //         background-color: #d4d8dd;
+    //         border-radius: 20px;
+    //         width: 100%;
+    //     }
+    // }
 `
