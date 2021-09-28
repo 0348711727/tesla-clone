@@ -16,19 +16,25 @@ function Navbar(props) {
     console.log(newItems)
     return (
         <Container>
-            <a href="#">
+            <p>
                 <img src="./images/logo.png" alt="" style={{width: "10em"}}/>
-            </a>
+            </p>
+            {/* <a href="#">
+                <img src="./images/logo.png" alt="" style={{width: "10em"}}/>
+            </a> */}
             <Menu>
                 {items && items.map((item, index) =>(
                     
-                <a href="#" key={index}>{item}</a>
+                <p key={index}>{item}</p>
+                // <a href="#" key={index}>{item}</a>
                     ))}
             </Menu>
             <div ref={node} className="rightMenu" style={{display: "flex"}}>
                 <RightMenu>
-                    <a href="#">Shop</a>
-                    <a href="#">Account</a>
+                    {/* <a href="#">Shop</a>
+                    <a href="#">Account</a> */}
+                    <p>Shop</p>
+                    <p>Account</p>
                 </RightMenu>
                 <BurgerNav refs={node} open={open} setOpen={setOpen} />
             </div>

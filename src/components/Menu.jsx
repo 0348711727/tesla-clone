@@ -8,7 +8,8 @@ function Menu({open}) {
     return (
         <MenuNav open={open}>
             {items && items.map((item, index) =>(                
-                <a href="#" key={index}>{item}</a>
+                <p  key={index}>{item}</p>
+                // <a  key={index}>{item}</a>
             ))}
         </MenuNav>
     );
