@@ -12,7 +12,7 @@ function Navbar(props) {
     const node = useRef();
     useOnclickOutside(node, ()=>setOpen(false));
     const items = useSelector(selectItems)//goi item tu global state
-    const newItems = useSelector(state => state.item)// items & newItems giong nhau
+    // const newItems = useSelector(state => state.item)// items & newItems giong nhau
     // console.log(newItems)
     return (
         <Container>
@@ -62,7 +62,7 @@ const Menu = styled.div`
         font-size: 14.5px;
         padding: 0 1em;
     }    
-    // a{ ----------thay toàn bộ thẻ a thành p để deploy thử vì <a> deploy bị lỗi------------------------------
+    // a{   
     //     font-weight: 550;
     //     font-size: 14.5px;
     //     padding: 0 1em;
